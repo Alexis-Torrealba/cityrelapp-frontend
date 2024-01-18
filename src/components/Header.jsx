@@ -10,47 +10,25 @@ function Header() {
 					alt=""
 				/>
 			</div>
-			<nav className="flex-grow text-center">
-				<ul className="flex items-center justify-center gap-16 text-[#444] cursor-pointer text-2xl font-bold">
-					<li>
-						<Link to="/" onClick={'App'} className="text-orange-500">
-							Home
-						</Link>
-					</li>
-					<li>
-						<Link
-							to="/About"
-							onClick={'About'}
-							className="hover:text-orange-500"
-						>
-							About
-						</Link>
-					</li>
-					<li>
-						<Link to="/Blog" onClick={'Blog'} className="hover:text-orange-500">
-							Blog
-						</Link>
-					</li>
-					<li>
-						<Link
-							to="/Property"
-							onClick={'Property'}
-							className="hover:text-orange-500"
-						>
-							Property
-						</Link>
-					</li>
-					<li>
-						<Link
-							to="/PropertyForm"
-							onClick={'PropertyForm'}
-							className="hover:text-orange-500"
-						>
-							Contact
-						</Link>
-					</li>
-				</ul>
-			</nav>
+			<div className="flex-grow text-center">
+				<nav className="flex items-center justify-center gap-16 text-[#444] cursor-pointer text-2xl font-bold list-none">
+					<Link to="/" className="text-orange-500">
+						Home
+					</Link>
+					<Link to="/about" className="hover:text-orange-500">
+						About
+					</Link>
+					<Link to="/blog" className="hover:text-orange-500">
+						Blog
+					</Link>
+					<Link to="/property" className="hover:text-orange-500">
+						Property
+					</Link>
+					<Link to="/propertyform" className="hover:text-orange-500">
+						Contact
+					</Link>
+				</nav>
+			</div>
 		</div>
 	);
 }
